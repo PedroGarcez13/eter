@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fredoka:wght@400;500;600;700&family=Permanent+Marker&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body text-ink bg-cream;
+    background-image:
+      radial-gradient(circle at 12% 8%, rgba(242,178,62,.10), transparent 40%),
+      radial-gradient(circle at 88% 92%, rgba(45,91,184,.08), transparent 42%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-semibold rounded-full
+           border-2 border-brand-blue bg-gold text-brand-blue px-6 py-3 shadow-softsm
+           transition hover:-translate-y-0.5 hover:bg-gold-2;
+  }
+  .btn-blue { @apply bg-brand-blue text-cream hover:bg-brand-blue2; }
+  .btn-ghost { @apply bg-transparent; }
+  .btn-sm { @apply px-4 py-2 text-sm; }
+  .card-surface { @apply bg-paper border-2 border-brand-blue rounded-2xl shadow-softsm; }
+  .field-input {
+    @apply font-body text-brand-blue border-2 border-brand-soft bg-paper rounded-xl
+           px-3 py-2 outline-none transition focus:border-brand-blue2 w-full;
+  }
+}

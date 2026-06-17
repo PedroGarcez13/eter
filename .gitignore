@@ -1,0 +1,39 @@
+# Dependências
+node_modules/
+.pnp
+.pnp.js
+
+# Build / saída
+dist/
+dist-ssr/
+build/
+*.local
+
+# Variáveis de ambiente (NUNCA versionar chaves)
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Editores / SO
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Cache de testes/ferramentas
+coverage/
+.vite/
+.eslintcache
+
+# Supabase (CLI local)
+supabase/.branches
+supabase/.temp
