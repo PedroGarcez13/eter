@@ -20,8 +20,8 @@ export default function App() {
           </Routes>
         </main>
         <footer className="text-center py-8 text-brand-blue2 text-sm">
-          Brechó Agostina • Rua de São Bento 233, Olinda — PE<br />
-          <span className="font-script text-lg text-gold-2">feito com carinho ♡</span>
+          Éter · brechó<br />
+          <span className="font-script text-xl text-gold-2">feito com carinho ✦</span>
         </footer>
       </BrowserRouter>
     </AdminProvider>

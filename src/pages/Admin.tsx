@@ -17,7 +17,7 @@ function Stat({ k, value, gold }: { k: string; value: string; gold?: boolean }) 
 }
 
 export function Admin() {
-  const { admin } = useAdmin();
+  const { admin, loading: authLoading } = useAdmin();
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [formOpen, setFormOpen] = useState(false);
@@ -30,6 +30,9 @@ export function Admin() {
 
   useEffect(() => { reload(); }, [reload]);
 
+  if (authLoading) {
+    return <p className="text-center text-brand-blue2 py-16 font-script text-2xl">verificando acesso...</p>;
+  }
   if (!admin) return <Navigate to="/" replace />;
 
   const available = products.filter((p) => p.status === "available");
@@ -54,7 +57,7 @@ export function Admin() {
   return (
     <section>
       <h2 className="font-display text-3xl text-brand-blue">Estoque</h2>
-      <p className="font-script text-2xl text-brand-blue2 mb-5">gerencie as peças da Agostina</p>
+      <p className="font-script text-2xl text-brand-blue2 mb-5">gerencie as peças do brechó</p>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-7">
         <Stat k="Peças disponíveis" value={String(available.length)} />

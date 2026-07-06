@@ -1,10 +1,10 @@
-# Agostina 🧵
+# Éter ✦
 
-Sistema web do brechó **Agostina** — Rua de São Bento 233, Olinda/PE.
+Sistema web do brechó **Éter**.
 
 Uma vitrine online das peças disponíveis, com página de entrada acolhedora baseada
-na identidade visual da loja (estilo feito à mão, paleta creme + azul + dourado, com a cara de Olinda),
-e uma área de administração para gerenciar o estoque.
+na identidade visual da loja (estética etérea e sonhadora — verde-sálvia, floresta e
+creme suave, com letreiro caligráfico), e uma área de administração para gerenciar o estoque.
 
 ## Funcionalidades
 
