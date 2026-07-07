@@ -9,9 +9,9 @@ import { useAdmin } from "../lib/admin";
 
 function Stat({ k, value, gold }: { k: string; value: string; gold?: boolean }) {
   return (
-    <div className={`card-surface p-4 ${gold ? "bg-gold" : ""}`}>
-      <div className="text-xs font-semibold text-brand-blue2 uppercase tracking-wide">{k}</div>
-      <div className="font-display text-3xl text-brand-blue mt-1.5 leading-none">{value}</div>
+    <div className={`card-surface p-4 ${gold ? "bg-gold border-transparent" : ""}`}>
+      <div className={`text-xs font-semibold uppercase tracking-wide ${gold ? "text-[#141327]/70" : "text-brand-blue2"}`}>{k}</div>
+      <div className={`font-display text-3xl mt-1.5 leading-none ${gold ? "text-[#141327]" : "text-brand-blue"}`}>{value}</div>
     </div>
   );
 }

@@ -7,11 +7,11 @@
 @layer base {
   body {
     @apply font-body text-ink bg-cream;
-    /* névoa etérea: nuvens suaves de verde-azulado e creme */
+    /* névoa etérea escura: roxo, azul e verde */
     background-image:
-      radial-gradient(circle at 15% 12%, rgba(159,190,184,.35), transparent 45%),
-      radial-gradient(circle at 85% 18%, rgba(233,225,170,.30), transparent 42%),
-      radial-gradient(circle at 50% 95%, rgba(120,155,100,.20), transparent 55%);
+      radial-gradient(circle at 12% 10%, rgba(120,90,190,.30), transparent 45%),
+      radial-gradient(circle at 88% 16%, rgba(60,110,175,.24), transparent 45%),
+      radial-gradient(circle at 50% 100%, rgba(70,155,120,.22), transparent 55%);
     background-attachment: fixed;
     min-height: 100vh;
   }
@@ -20,15 +20,15 @@
 @layer components {
   .btn {
     @apply inline-flex items-center justify-center gap-2 font-semibold rounded-full
-           border-2 border-brand-blue bg-gold text-brand-blue px-6 py-3 shadow-softsm
-           transition hover:-translate-y-0.5 hover:bg-gold-2 hover:text-cream;
+           bg-gold text-[#141327] px-6 py-3 shadow-softsm
+           transition hover:-translate-y-0.5 hover:bg-gold-2;
   }
-  .btn-blue { @apply bg-brand-blue text-cream hover:bg-brand-blue2; }
-  .btn-ghost { @apply bg-transparent; }
+  .btn-blue { @apply bg-brand-blue text-[#141327] hover:bg-brand-blue2 hover:text-white; }
+  .btn-ghost { @apply bg-transparent text-ink border-2 border-brand-soft hover:bg-brand-soft; }
   .btn-sm { @apply px-4 py-2 text-sm; }
-  .card-surface { @apply bg-paper border-2 border-brand-blue rounded-2xl shadow-softsm; }
+  .card-surface { @apply bg-paper border border-brand-blue/25 rounded-2xl shadow-softsm; }
   .field-input {
-    @apply font-body text-ink border-2 border-brand-soft bg-paper rounded-xl
-           px-3 py-2 outline-none transition focus:border-brand-blue2 w-full;
+    @apply font-body text-ink border border-brand-soft bg-cream rounded-xl
+           px-3 py-2 outline-none transition focus:border-brand-blue placeholder:text-ink/40 w-full;
   }
 }

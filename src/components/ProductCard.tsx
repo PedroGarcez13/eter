@@ -19,7 +19,7 @@ export function ProductCard({ product, admin, onEdit, onToggleSold, onRemove }: 
         ) : (
           <Hanger className="w-16 text-brand-blue opacity-30" />
         )}
-        <span className="absolute top-2.5 left-2.5 bg-gold text-brand-blue font-bold text-xs px-2.5 py-0.5 rounded-full">
+        <span className="absolute top-2.5 left-2.5 bg-gold text-[#141327] font-bold text-xs px-2.5 py-0.5 rounded-full">
           {product.category}
         </span>
         {product.status === "sold" && (
@@ -31,7 +31,7 @@ export function ProductCard({ product, admin, onEdit, onToggleSold, onRemove }: 
 
       <div className="p-3.5 flex flex-col gap-1.5 flex-1">
         <div className="font-semibold text-lg text-brand-blue leading-tight">{product.name}</div>
-        <div className="text-sm text-[#5b6b8c] flex-1">{product.description}</div>
+        <div className="text-sm text-ink/60 flex-1">{product.description}</div>
         <div className="flex items-center justify-between mt-1.5">
           <span className="text-xs font-semibold text-brand-blue2 bg-brand-soft px-2.5 py-0.5 rounded-full">
             Tam. {product.size}
