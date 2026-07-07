@@ -19,11 +19,11 @@ export function ProductCard({ product, admin, onEdit, onToggleSold, onRemove }: 
         ) : (
           <Hanger className="w-16 text-brand-blue opacity-30" />
         )}
-        <span className="absolute top-2.5 left-2.5 bg-gold text-[#141327] font-bold text-xs px-2.5 py-0.5 rounded-full">
+        <span className="absolute top-2.5 left-2.5 bg-gold text-white font-bold text-xs px-2.5 py-0.5 rounded-full">
           {product.category}
         </span>
         {product.status === "sold" && (
-          <div className="absolute inset-0 bg-brand-blue/60 flex items-center justify-center font-display text-2xl text-gold -rotate-6">
+          <div className="absolute inset-0 bg-brand-blue/60 flex items-center justify-center font-display text-2xl text-white -rotate-6">
             VENDIDA
           </div>
         )}

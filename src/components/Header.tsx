@@ -45,7 +45,7 @@ export function Header() {
       </div>
 
       {admin && (
-        <div className="bg-brand-blue text-gold text-center font-semibold text-sm py-1.5 tracking-wide">
+        <div className="bg-brand-blue text-white text-center font-semibold text-sm py-1.5 tracking-wide">
           ✦ Modo admin ativo — você pode cadastrar, editar e remover peças ✦
         </div>
       )}

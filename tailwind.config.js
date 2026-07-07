@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-// Paleta "Éter" — dark fantasy: índigo profundo, névoa de roxo/azul/verde,
-// âmbar mágico nos destaques. (Mantemos os nomes dos tokens.)
+// Paleta "Éter" — claro: fundo magenta suave, verde-musgo nos botões e detalhes.
+// (Mantemos os nomes dos tokens; "brand.blue" e "gold" são tons de musgo; "cream" é o magenta claro do fundo.)
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        cream: { DEFAULT: "#141327", 2: "#20203E" }, // fundo escuro / superfície secundária
-        brand: { blue: "#7FC4A0", blue2: "#A98BE0", soft: "#332F5C" }, // verde-brilho / violeta / muted índigo
-        gold: { DEFAULT: "#E7C97E", 2: "#D3AE55" }, // âmbar (botões, preços, destaques)
-        ink: "#E9E6F5", // texto claro (lavanda)
-        paper: "#211F40", // painel dos cards (índigo escuro)
+        cream: { DEFAULT: "#F3DAE8", 2: "#ECCADE" }, // fundo magenta claro
+        brand: { blue: "#6F7F3E", blue2: "#5E6E32", soft: "#E6E9D0" }, // verde-musgo (detalhes/bordas) + chip pálido
+        gold: { DEFAULT: "#7C8C46", 2: "#66772F" }, // musgo (botões, preços, etiquetas)
+        ink: "#3E2236", // texto escuro (ameixa)
+        paper: "#FCF4F8", // superfície dos cards (quase branco rosado)
       },
       fontFamily: {
         display: ["'Cormorant Garamond'", "serif"],
@@ -18,8 +18,8 @@ export default {
         body: ["'Nunito'", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 10px 34px rgba(0,0,0,.5)",
-        softsm: "0 3px 16px rgba(0,0,0,.4)",
+        soft: "0 8px 26px rgba(80,40,70,.16)",
+        softsm: "0 3px 12px rgba(80,40,70,.12)",
       },
       borderRadius: { xl2: "22px" },
     },
